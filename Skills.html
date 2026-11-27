@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Durga Prasad Katta</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!--<link rel="stylesheet" type="text/css" href="my_Profile_Page_Css.css">-->
+<style>
+:root {
+    --primary-color: #0d6efd;
+    --dark-bg: #0f172a;
+    --card-bg: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px; /* Prevents sticky navbar from covering section titles */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* ================= HERO / HEADER SECTIONS ================= */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    color: White;
+    padding: 80px 0 60px 0;
+}
+
+/* Slightly compact hero padding for subpages like Skills.html */
+.hero-subpage {
+    padding: 100px 0 45px 0;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= CARDS & BADGES ================= */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-badge {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin: 4px;
+}
+
+/* ================= TIMELINE ================= */
+.timeline-item {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    left: -7.5px;
+    top: 5px;
+}
+
+</style>
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Durga Prasad Katta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="My_Profile_Page.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="fw-bold mb-2">Skills &amp; Core Competencies</h1>
+            <p class="lead text-light opacity-75 mb-0">
+                Technical tools, analytical capabilities, and operational strengths
+            </p>
+        </div>
+    </header>
+
+    <!-- ================= MAIN SKILLS CONTENT ================= -->
+    <main class="container my-5">
+        <div class="row g-4">
+
+            <!-- COLUMN 1: TECHNICAL & DATA TOOLS -->
+            <div class="col-lg-6">
+                <div class="card p-4 h-100">
+                    <h3 class="h5 fw-bold mb-3"><i class="bi bi-tools text-primary me-2"></i>Technical &amp; Data Tools</h3>
+                    <p class="text-muted small mb-3">
+                        Core software, programming languages, and web technologies used for data analysis, reporting, and workflow automation.
+                    </p>
+                    <div class="d-flex flex-wrap mb-3">
+                        <span class="badge bg-primary skill-badge">Microsoft Excel</span>
+                        <span class="badge bg-primary skill-badge">Google Sheets</span>
+                        <span class="badge bg-primary skill-badge">SQL</span>
+                        <span class="badge bg-primary skill-badge">Python</span>
+                        <span class="badge bg-secondary skill-badge">JAVA</span>
+                        <span class="badge bg-secondary skill-badge">HTML / CSS</span>
+                        <span class="badge bg-secondary skill-badge">Bootstrap</span>
+                    </div>
+                    <ul class="text-muted small mb-0">
+                        <li class="mb-2"><b>Advanced Spreadsheets:</b> XLOOKUP, INDEX-MATCH, SUMIFS, Pivot Tables, dynamic arrays, and automated KPI dashboards.</li>
+                        <li class="mb-2"><b>Database &amp; Scripting:</b> Querying relational datasets with SQL and automating repetitive workflows with Python.</li>
+                        <li><b>Web Development:</b> Building clean, responsive user interfaces using HTML5, CSS3, and Bootstrap 5.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- COLUMN 2: DOMAIN & OPERATIONAL SKILLS -->
+            <div class="col-lg-6">
+                <div class="card p-4 h-100">
+                    <h3 class="h5 fw-bold mb-3"><i class="bi bi-shield-check text-primary me-2"></i>Operations &amp; Domain Expertise</h3>
+                    <p class="text-muted small mb-3">
+                        Process management, quality assurance, and compliance frameworks driven by operational excellence.
+                    </p>
+                    <div class="d-flex flex-wrap mb-3">
+                        <span class="badge bg-primary skill-badge">Process Improvement</span>
+                        <span class="badge bg-primary skill-badge">Trust &amp; Safety</span>
+                        <span class="badge bg-primary skill-badge">Quality Assurance (95%+)</span>
+                        <span class="badge bg-secondary skill-badge">SLA Compliance</span>
+                        <span class="badge bg-secondary skill-badge">Root Cause Analysis</span>
+                        <span class="badge bg-secondary skill-badge">Stakeholder Reporting</span>
+                    </div>
+                    <ul class="text-muted small mb-0">
+                        <li class="mb-2"><b>Service Delivery &amp; Accuracy:</b> Maintaining 95%+ quality scores while meeting high-volume daily operational targets.</li>
+                        <li class="mb-2"><b>Policy &amp; Risk Enforcement:</b> Identifying edge cases, mitigating platform risks, and refining escalation workflows.</li>
+                        <li><b>Workflow Optimization:</b> Spotting process bottlenecks and standardizing reporting templates for team efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FULL WIDTH ROW: SOFT SKILLS -->
+            <div class="col-12">
+                <div class="card p-4">
+                    <h3 class="h5 fw-bold mb-3"><i class="bi bi-person-check-fill text-primary me-2"></i>Soft Skills &amp; Professional Strengths</h3>
+                    <div class="d-flex flex-wrap">
+                        <span class="badge bg-secondary skill-badge">Critical Thinking &amp; Objectivity</span>
+                        <span class="badge bg-secondary skill-badge">Adaptability &amp; Continuous Learning</span>
+                        <span class="badge bg-secondary skill-badge">Active Listening &amp; Careful Reading</span>
+                        <span class="badge bg-secondary skill-badge">Problem Solving &amp; Pattern Recognition</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="My_Profile_Page.html" class="btn btn-outline-primary me-2"><i class="bi bi-arrow-left me-1"></i> Back to Home</a>
+            <a href="Experience.html" class="btn btn-primary">View My Experience <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <small>&copy; 2026 Durga Prasad Katta. All rights reserved.</small>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

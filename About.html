@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Durga Prasad Katta</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom External CSS -->
+    <!--<link rel="stylesheet" href="my_Profile_Page_Css.css">-->
+</head>
+<style>
+:root {
+    --primary-color: #0d6efd;
+    --dark-bg: #0f172a;
+    --card-bg: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px; /* Prevents sticky navbar from covering section titles */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* ================= HERO / HEADER SECTIONS ================= */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    color: White;
+    padding: 80px 0 60px 0;
+}
+
+/* Slightly compact hero padding for subpages like Skills.html */
+.hero-subpage {
+    padding: 100px 0 45px 0;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= CARDS & BADGES ================= */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-badge {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin: 4px;
+}
+
+/* ================= TIMELINE ================= */
+.timeline-item {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    left: -7.5px;
+    top: 5px;
+}
+
+</style>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Durga Prasad Katta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="My_Profile_Page.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <header class="hero-section hero-subpage text-center">
+        <div class="container">
+            <img src="Image_Photo.jpg" alt="Profile Picture" class="rounded-circle profile-img mb-3">
+            <h1 class="fw-bold mb-1">About Me</h1>
+            <p class="lead text-light opacity-75 mb-0">
+                Sr. Associate | Trust &amp; Safety Operations 
+            </p>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ABOUT CONTENT ================= -->
+    <main class="container my-5">
+        <div class="row g-4">
+
+            <!-- LEFT COLUMN: QUICK PROFILE & EDUCATION -->
+            <div class="col-lg-4">
+                
+                <!-- Quick Facts Card -->
+                <div class="card p-4 mb-4">
+                    <h3 class="h5 fw-bold mb-3"><i class="bi bi-person-badge-fill text-primary me-2"></i>Personal Details</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><strong>Name:</strong> Durga Prasad Katta</li>
+                        <li class="mb-2"><strong>Role:</strong> Sr. Associate</li>
+                        <li class="mb-2"><strong>Organization:</strong> Genpact India Pvt. Ltd.</li>
+                        <li class="mb-2"><strong>Location:</strong> Hyderabad, Telangana, India</li>
+                        <li class="mb-0"><strong>Email:</strong> <a href="mailto:kattadurgaprasad2002@gmail.com">kattadurgaprasad2002@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- Education Card -->
+                <div class="card p-4 mb-4">
+                    <h3 class="h5 fw-bold mb-3"><i class="bi bi-mortarboard-fill text-primary me-2"></i>Education</h3>
+                    
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-0">Bachelor of Technology (B.Tech)</h6>
+                        <small class="text-muted">Aditya Engineering College | 2020 – 2023</small>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-0">Diploma in Engineering</h6>
+                        <small class="text-muted">S.M.V.M Polytechnic College | 2017 – 2020</small>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-0">Secondary School Education</h6>
+                        <small class="text-muted">K.S.R Z.P. High School | 2016 – 2017</small>
+                    </div>
+                </div>
+
+                <!-- Certifications Details -->
+                <div class="card p-4 mb-4">
+                    <h3 class="h5 fw-bold my-3"><i class="bi bi-patch-check-fill text-primary me-2"></i>Certifications</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Python HackerRank Certification</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>JAVA HackerRank Certification</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>SQL HackerRank Certification</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Agentic AI &amp; Support Specialist</li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <!-- RIGHT COLUMN: PROFESSIONAL BIO & HIGHLIGHTS -->
+            <div class="col-lg-8">
+                
+                <!-- Professional Summary Card -->
+                <div class="card p-4 mb-4">
+                    <h3 class="h4 fw-bold mb-3"><i class="bi bi-file-person-fill text-primary me-2"></i>Professional Summary</h3>
+                    <p class="text-muted">
+                        I am a Senior Associate based in Hyderabad with strong expertise in core operations, Trust &amp; Safety content moderation, service delivery, and process excellence. Currently working at Genpact India Pvt. Ltd., I focus on driving daily operational accuracy, enforcing complex platform guidelines, and ensuring strict adherence to client SLAs and compliance standards.
+                    </p>
+                    <p class="text-muted mb-0">
+                        Alongside operations, I bring a strong technical and analytical background in <strong>Microsoft Excel, Google Sheets, SQL, and Python</strong>. I enjoy identifying process bottlenecks, automating repetitive reporting workflows, and building interactive dashboards that turn raw operational data into actionable insights.
+                    </p>
+                </div>
+
+                <!-- Key Highlights / What I Bring Card -->
+                <div class="card p-4">
+                    <h3 class="h4 fw-bold mb-3"><i class="bi bi-award-fill text-primary me-2"></i>Key Career Highlights</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="border rounded p-3 h-100">
+                                <h6 class="fw-bold text-primary"><i class="bi bi-graph-up-arrow me-1"></i> Consistent Top Performer</h6>
+                                <p class="text-muted small mb-0">
+                                    Recognized with top performance ratings and Rewards &amp; Recognition awards for maintaining 95%+ quality accuracy over consecutive review cycles.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="border rounded p-3 h-100">
+                                <h6 class="fw-bold text-primary"><i class="bi bi-gear-fill me-1"></i> Process &amp; Data Automation</h6>
+                                <p class="text-muted small mb-0">
+                                    Streamlined daily metric tracking and reporting workflows using advanced spreadsheet formulas, SQL queries, and structured validation templates.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="border rounded p-3 h-100">
+                                <h6 class="fw-bold text-primary"><i class="bi bi-shield-lock-fill me-1"></i> Trust &amp; Safety Expertise</h6>
+                                <p class="text-muted small mb-0">
+                                    Experienced in high-volume policy enforcement, edge-case escalation, and cross-functional collaboration to protect platform integrity.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="border rounded p-3 h-100">
+                                <h6 class="fw-bold text-primary"><i class="bi bi-cpu-fill me-1"></i> Continuous Upskilling</h6>
+                                <p class="text-muted small mb-0">
+                                    Certified in Python, Java, SQL (HackerRank), and Agentic AI &amp; Customer Support workflows, continuously bridging operations with analytics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="text-center mt-4">
+            <a href="My_Profile_Page.html" class="btn btn-outline-primary me-2"><i class="bi bi-arrow-left me-1"></i> Back to Home</a>
+            <a href="Skills.html" class="btn btn-primary">View My Skills <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <small>&copy; 2026 Durga Prasad Katta. All rights reserved.</small>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Durga Prasad Katta</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom External CSS -->
+    <!--<link rel="stylesheet" href="my_Profile_Page_Css.css">-->
+</head>
+<style>
+:root {
+    --primary-color: #0d6efd;
+    --dark-bg: #0f172a;
+    --card-bg: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px; /* Prevents sticky navbar from covering section titles */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* ================= HERO / HEADER SECTIONS ================= */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    color: White;
+    padding: 80px 0 60px 0;
+}
+
+/* Slightly compact hero padding for subpages like Skills.html */
+.hero-subpage {
+    padding: 100px 0 45px 0;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= CARDS & BADGES ================= */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-badge {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin: 4px;
+}
+
+/* ================= TIMELINE ================= */
+.timeline-item {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    left: -7.5px;
+    top: 5px;
+}
+
+</style>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="My_Profile_Page.html">Durga Prasad Katta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="My_Profile_Page.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <header class="hero-section hero-subpage text-center">
+        <div class="container">
+            <h1 class="fw-bold mb-2">Work Experience</h1>
+            <p class="lead text-light opacity-75 mb-0">
+                Professional history, operational roles, and career milestones
+            </p>
+        </div>
+    </header>
+
+    <!-- ================= MAIN EXPERIENCE CONTENT ================= -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <div class="card p-4 mb-4">
+                    <h3 class="h4 fw-bold mb-4"><i class="bi bi-briefcase-fill text-primary me-2"></i>Professional Journey</h3>
+                    
+                    <!-- Experience Item 1 -->
+                    <div class="timeline-item">
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <h5 class="fw-bold mb-1">Sr. Associate / Process Associate — Content Moderation &amp; Trust &amp; Safety</h5>
+                            <span class="badge bg-light text-dark border">2024 - Present</span>
+                        </div>
+                        <p class="text-muted small mb-3">Genpact India PVT LTD | Full-time | Hyderabad, India</p>
+                        <ul>
+                            <li>
+                                <b>Operational Accuracy &amp; Metric Tracking:</b> Consistently maintained high accuracy scores (95%+) and met daily volume benchmarks, contributing to overall team quality targets and floor utilization metrics.
+                            </li>
+                            <li>
+                                <b>Policy Enforcement &amp; Risk Mitigation:</b> Enforced complex Trust &amp; Safety guidelines and community standards across high-volume digital content, identifying policy violations, hate speech, spam, and fraud to maintain platform integrity.
+                            </li>
+                            <li>
+                                <b>Incident Escalation &amp; Cross-Functional Collaboration:</b> Identified emerging policy edge cases and critical safety threats, surfacing insights to senior analysts and operational leadership to refine escalation workflows.
+                            </li>
+                            <li>
+                                <b>Process Improvement &amp; Tooling Efficiency:</b> Utilized internal moderation systems, database querying tools, and workflow scripts to streamline content review efficiency while maintaining strict adherence to shift schedules and service level agreements (SLAs).
+                            </li>
+                            <li>
+                                <b>Performance Recognition:</b> Achieved top performance ratings and internal milestone awards for executing highly accurate process reviews and completing continuous learning pathways.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="text-center mt-4">
+            <a href="My_Profile_Page.html" class="btn btn-outline-primary me-2"><i class="bi bi-arrow-left me-1"></i> Back to Home</a>
+            <a href="Projects.html" class="btn btn-primary">View Projects <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <small>&copy; 2026 Durga Prasad Katta. All rights reserved.</small>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
